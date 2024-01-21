@@ -20,7 +20,6 @@ const gencompchoice = () => {
     //her to genrate number we have to multiply them with its next number.
 
 
-
 };
 
 const drawgame = () => {
@@ -65,7 +64,7 @@ const playGame = (userchoice) =>{
         let userwin = true;
         if(userchoice === "rock") {
             // scissors, paper
-            compchoice=== "paper" ? false : true;
+            userwin = compchoice=== "paper" ? false : true;
         } else if(userchoice === "paper") {
             // rock,scissor
             userwin = compchoice === "scissors" ? false : true;
